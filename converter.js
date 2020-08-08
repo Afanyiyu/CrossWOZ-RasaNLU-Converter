@@ -37,6 +37,7 @@ function processEntity(content, entity, type) {
   if (splitResult[0].endsWith('[')) return content
   let result = `${splitResult[0]}[${entity}](${type})${splitResult[1]}`
   if (!result.endsWith('\n')) result += '\n'
+  if (!result.startsWith('- ')) result = '- ' + result
   return result
 }
 
@@ -61,7 +62,9 @@ function generateIntentString(content, entities) {
         }
       }
     }
-  return content.endsWith('\n') ? content : content + '\n'
+  if (!content.endsWith('\n')) content += '\n'
+  if (!content.startsWith('- ')) content = '- ' + content
+  return content
 }
 
 function processMessage(content, goals, entities, intentList) {
