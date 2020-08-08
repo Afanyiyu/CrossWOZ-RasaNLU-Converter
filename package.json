@@ -1,0 +1,24 @@
+{
+  "name": "crosswoz-rasanlu-converter",
+  "version": "1.0.0",
+  "description": "Convert CrossWOZ database to Rasa NLU markdown data and lookup table files.",
+  "main": "converter.js",
+  "scripts": {
+    "start": "node converter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afanyiyu/CrossWOZ-RasaNLU-Converter.git"
+  },
+  "keywords": [
+    "rasa",
+    "crosswoz",
+    "convlab-2"
+  ],
+  "author": "Il Harper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Afanyiyu/CrossWOZ-RasaNLU-Converter/issues"
+  },
+  "homepage": "https://github.com/Afanyiyu/CrossWOZ-RasaNLU-Converter#readme"
+}
